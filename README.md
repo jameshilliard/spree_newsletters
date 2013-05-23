@@ -9,7 +9,7 @@ Installation
 Add spree_newsletters to your Gemfile:
 
 ```ruby
-gem 'spree_newsletters'
+gem 'spree_newsletters', github: shimoyamadaniel/spree-newsletters, branch: "2-0-stable"
 ```
 
 Bundle your dependencies and run the installation generator:
