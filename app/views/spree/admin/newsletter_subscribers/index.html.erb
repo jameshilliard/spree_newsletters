@@ -9,28 +9,67 @@
 	</li>
 <% end %>
 
-<table class="index" id="listing_newsletter_subscribers" data-hook>
-	<colgroup>
-		<col style="width: 85%">
-		<col style="width: 15%">
-	</colgroup>
-	<thead>
-		<tr data-hook="admin_newsletter_subscribers_index_headers">
-			<th><%= t(:newsletter_subscribers) %></th>
-			<th data-hook="admin_newsletter_subscribers_index_header_actions" class="actions"></th>
-		</tr>
-	</thead>
-	<tbody>
-		<% @newsletter_subscribers.each do |newsletter_subscriber|%>
-			<tr id="<%= spree_dom_id newsletter_subscriber %>" data-hook="admin_newsletter_subscribers_index_rows" class="<%= cycle('odd', 'even')%>">
-				<td class='newsletter_subscribers_email'><%=link_to newsletter_subscriber.email, object_url(newsletter_subscriber) %></td>
-				<td data-hook="admin_newsletter_subscriber_index_row_actions" class="actions">
-					<%= link_to_edit newsletter_subscriber, :no_text => true %>
-					<%= link_to_delete newsletter_subscriber, :no_text => true %>
-				</td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+<% content_for :table_filter_title do %>
+  <%= Spree.t(:search) %>
+<% end %>
+
+<% content_for :table_filter do %>
+  <div data-hook="admin_newsletter_subscribers_sidebar">
+
+    <%= search_form_for [:admin, :search] do |f| %>
+
+        <%- locals = {:f => f} %>
+
+        <div data-hook="admin_newsletter_subscribers_index_search">
+          <div class="alpha nine columns">
+            <div class="field">
+              <%= f.label :email_cont, Spree.t(:email) %>
+              <%= f.text_field :email_cont, :size => 15 %>
+            </div>
+          </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="form-buttons actions filter-actions" data-hook="admin_newsletter_subscribers_index_search_buttons">
+          <%= button Spree.t(:search), 'icon-search' %>
+        </div>
+    <% end %>
+  </div>
+<% end %>
+
+
+<div id="new_product_wrapper" data-hook></div>
+
+<%= paginate @newsletter_subscribers %>
+
+<% if @newsletter_subscribers.any? %>
+  <table class="index" id="listing_newsletter_subscribers">
+    <colgroup>
+       <col style="width: 80%;">
+       <col style="width: 20%;">
+    </colgroup>
+    <thead>
+      <tr data-hook="admin_newsletter_subscribers_index_headers">
+        <th><%= Spree.t(:email) %></th>
+        <th data-hook="admin_newsletter_subscribers_index_header_actions" class="actions"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @newsletter_subscribers.each do |newsletter_subscriber| %>
+          <tr <%= "style='color: red;'" if newsletter_subscriber.deleted? %> id="<%= spree_dom_id newsletter_subscriber %>" data-hook="admin_newsletter_subscribers_index_rows" class="<%= cycle('odd', 'even') %>">
+            <td class="align-center"><%= newsletter_subscriber.email rescue '' %></td>
+            <td class="actions" data-hook="admin_newsletter_subscribers_index_row_actions">
+              <%= link_to_delete newsletter_subscriber, :no_text => true unless newsletter_subscriber.deleted? %>
+            </td>
+          </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <div class="no-objects-found">
+    <%= Spree.t(:no_results) %>
+  </div>
+<% end %>
 
 <%= paginate @newsletter_subscribers %>
