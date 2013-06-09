@@ -1,3 +1,6 @@
 pt-BR:
+    newsletter_subscribers: "Newsletters"
+    listing_newsletter_subscribers: "Listando"
+    new_newsletter_subscriber: "Novo"
     on_subscribe: "temp"
     error_subscribe: "temp"
