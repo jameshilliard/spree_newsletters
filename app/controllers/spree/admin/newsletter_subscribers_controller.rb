@@ -8,7 +8,7 @@ module Spree
                 @search = Spree::NewsletterSubscriber.ransack(params[:q])
                 @newsletter_subscribers = @search.result().page(params[:page]).per(Spree::Config[:admin_products_per_page])
             end
-            
+        
         end
 
     end
