@@ -21,3 +21,6 @@
 {"ts":1370805564368,"patch":[[{"diffs":[[0,"ms[:q])\n"],[1,"                @newsletter_subscribers = @search.result\n"],[0,"        "]],"start1":343,"start2":343,"length1":16,"length2":73}]],"length":463,"saved":false}
 {"ts":1370805565715,"patch":[[{"diffs":[[0,"h.result"],[1,"()"],[0,"\n       "]],"start1":399,"start2":399,"length1":16,"length2":18}]],"length":465,"saved":false}
 {"ts":1370805569494,"patch":[[{"diffs":[[0,"dex\n"],[-1,"                @newsletter_subscribers = Spree::NewsletterSubscriber.page(params[:page]).per(Spree::Config[:admin_products_per_page])\n"],[0,"    "]],"start1":138,"start2":138,"length1":143,"length2":8}]],"length":330,"saved":false}
+{"ts":1370805669159,"patch":[[{"diffs":[[0,"result()"],[1," page(params[:page]).\n            per(Spree::Config[:admin_products_per_page])"],[0,"\n       "]],"start1":266,"start2":266,"length1":16,"length2":94}]],"length":408,"saved":false}
+{"ts":1370805671182,"patch":[[{"diffs":[[0,"result()"],[-1," "],[1,"."],[0,"page(par"]],"start1":266,"start2":266,"length1":17,"length2":17}]],"length":408,"saved":false}
+{"ts":1370805675171,"patch":[[{"diffs":[[0,":page])."],[-1,"\n            "],[0,"per(Spre"]],"start1":287,"start2":287,"length1":29,"length2":16}]],"length":395,"saved":false}
