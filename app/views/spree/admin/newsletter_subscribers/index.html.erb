@@ -57,7 +57,7 @@
     </thead>
     <tbody>
       <% @newsletter_subscribers.each do |newsletter_subscriber| %>
-          <tr <%= "style='color: red;'" if newsletter_subscriber.deleted? %> id="<%= spree_dom_id newsletter_subscriber %>" data-hook="admin_newsletter_subscribers_index_rows" class="<%= cycle('odd', 'even') %>">
+          <tr id="<%= spree_dom_id newsletter_subscriber %>" data-hook="admin_newsletter_subscribers_index_rows" class="<%= cycle('odd', 'even') %>">
             <td class="align-center"><%= newsletter_subscriber.email rescue '' %></td>
             <td class="actions" data-hook="admin_newsletter_subscribers_index_row_actions">
               <%= link_to_delete newsletter_subscriber, :no_text => true unless newsletter_subscriber.deleted? %>

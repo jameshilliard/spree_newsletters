@@ -1,0 +1,1 @@
+{"ts":1370811494467,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"# Sample localization file for English. Add more files in this directory for other locales.\n# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.\n\nen:\n  hello: \"Hello world\"\n"]],"start1":0,"start2":0,"length1":0,"length2":214}]],"length":214}
