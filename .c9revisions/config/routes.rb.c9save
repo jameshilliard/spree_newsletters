@@ -1,0 +1,3 @@
+{"ts":1370788336639,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"Spree::Core::Engine.routes.draw do\n  \n  # Add your extension routes here\n  namespace :admin do\n    resources :newsletter_subscribers\n  end\n  \n  resources :newsletter_subscribers\n  \nend\n"]],"start1":0,"start2":0,"length1":0,"length2":185}]],"length":185}
+{"contributors":[],"silentsave":false,"ts":1370788365594,"patch":[[{"diffs":[[0,"scribers"],[1,", :only => [:create]"],[0,"\n  \nend\n"]],"start1":169,"start2":169,"length1":16,"length2":36}]],"length":205,"saved":false}
+{"ts":1370788404881,"patch":[[{"diffs":[[0,"rs, "],[-1,":"],[0,"only"],[-1," =>"],[1,":"],[0," [:c"]],"start1":175,"start2":175,"length1":16,"length2":13}]],"length":202,"saved":false}

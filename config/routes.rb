@@ -5,6 +5,6 @@ Spree::Core::Engine.routes.draw do
     resources :newsletter_subscribers
   end
   
-  resources :newsletter_subscribers
+  resources :newsletter_subscribers, only: [:create]
   
 end
