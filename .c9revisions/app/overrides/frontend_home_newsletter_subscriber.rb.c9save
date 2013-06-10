@@ -20,3 +20,7 @@
 {"ts":1370823809443,"patch":[[{"diffs":[[0,"rt_b"],[-1,"efore"],[1,"ottom"],[0," => "]],"start1":135,"start2":135,"length1":13,"length2":13}]],"length":368,"saved":false}
 {"ts":1370823919185,"patch":[[{"diffs":[[0,"=> \""],[-1,"footer#foot"],[1,"id=\"wrapp"],[0,"er\""],[1,"\""],[0,",\r\n "]],"start1":145,"start2":145,"length1":22,"length2":21}]],"length":367,"saved":false}
 {"ts":1370823926049,"patch":[[{"diffs":[[0," \"id"],[-1,"=\""],[1,"#"],[0,"wrapper\""],[-1,"\""],[0,",\r\n "]],"start1":147,"start2":147,"length1":19,"length2":17}]],"length":365,"saved":false}
+{"ts":1370824721202,"patch":[[{"diffs":[[0,"ee/s"],[-1,"hared/_footer"],[1,"pree / layouts / spree_application.html"],[0,"\",\r\n"]],"start1":48,"start2":48,"length1":21,"length2":47}]],"length":391,"saved":false}
+{"ts":1370824726600,"patch":[[{"diffs":[[0,"ree/"],[-1,"spree / "],[0,"layo"]],"start1":47,"start2":47,"length1":16,"length2":8}]],"length":383,"saved":false}
+{"ts":1370824729967,"patch":[[{"diffs":[[0,"outs"],[-1," / "],[1,"/"],[0,"spre"]],"start1":54,"start2":54,"length1":11,"length2":9}]],"length":381,"saved":false}
+{"ts":1370824734516,"patch":[[{"diffs":[[0,"tion"],[-1,".html"],[0,"\",\r\n"]],"start1":72,"start2":72,"length1":13,"length2":8}]],"length":376,"saved":false}
