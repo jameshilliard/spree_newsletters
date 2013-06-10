@@ -10,3 +10,4 @@
 {"ts":1370828569735,"patch":[[{"diffs":[[0,"bara', '"],[-1,"~> "],[0,"2.1'\n  s"]],"start1":755,"start2":755,"length1":19,"length2":16}]],"length":1201,"saved":false}
 {"ts":1370828572694,"patch":[[{"diffs":[[0,"girl', '"],[-1,"~> "],[0,"4.2'\n  s"]],"start1":904,"start2":904,"length1":19,"length2":16}]],"length":1198,"saved":false}
 {"ts":1370828575679,"patch":[[{"diffs":[[0,",  '"],[-1,"~> "],[0,"2.13"]],"start1":1001,"start2":1001,"length1":11,"length2":8}]],"length":1195,"saved":false}
+{"ts":1370828612072,"patch":[[{"diffs":[[0," = '2.0."],[-1,"0"],[1,"1"],[0,"'\n  s.su"]],"start1":139,"start2":139,"length1":17,"length2":17}]],"length":1195,"saved":false}
