@@ -16,3 +16,4 @@
 {"ts":1370808243719,"patch":[[{"diffs":[[0,"Spree.t("],[1,":subscribe"],[0,") %><% e"]],"start1":310,"start2":310,"length1":16,"length2":26}]],"length":376,"saved":false}
 {"contributors":[],"silentsave":false,"ts":1370818838180,"patch":[[{"diffs":[[0,"ore => \""],[-1,"div"],[1,"footer"],[0,"#footer\""]],"start1":152,"start2":152,"length1":19,"length2":22}]],"length":379,"saved":false}
 {"ts":1370818954754,"patch":[[{"diffs":[[0,"ree/"],[-1,"layouts/spree_application"],[1,"shared/footer"],[0,"\",\r\n"]],"start1":47,"start2":47,"length1":33,"length2":21}]],"length":367,"saved":false}
+{"ts":1370823183839,"patch":[[{"diffs":[[0,"/shared/"],[1,"_"],[0,"footer\","]],"start1":50,"start2":50,"length1":16,"length2":17}]],"length":368,"saved":false}
