@@ -1,5 +1,6 @@
 pt-BR:
   spree:
+    subscribe: "Enviar"
     newsletter_subscribers: "Newsletters"
     listing_newsletter_subscribers: "Listando"
     new_newsletter_subscriber: "Novo"
